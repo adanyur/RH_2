@@ -1,6 +1,5 @@
 <?php include ('include/header.php');?>
-
-<!-- Contact Start -->
+<!-- Contact -->
 <div class="contact mt-125">
   <div class="container">
     <div class="section-header">
@@ -52,6 +51,7 @@
                 class="form-control"
                 id="name"
                 placeholder="Nombres"
+                name="nombres"
                 required="required"
                 data-validation-required-message="Please enter your name"
               />
@@ -63,6 +63,7 @@
                 class="form-control"
                 id="name"
                 placeholder="Apellidos"
+                name="apellidos"
                 required="required"
                 data-validation-required-message="Please enter your name"
               />
@@ -75,6 +76,7 @@
                 id="name"
                 placeholder="Telefono"
                 required="required"
+                name="telefono"
                 data-validation-required-message="Please enter your name"
               />
               <p class="help-block text-danger"></p>
@@ -87,6 +89,7 @@
                 id="email"
                 placeholder="Correo electronico"
                 required="required"
+                name="email"
                 data-validation-required-message="Please enter your email"
               />
               <p class="help-block text-danger"></p>
@@ -97,22 +100,27 @@
                 id="message"
                 placeholder="Escribe tu mensaje aquí"
                 required="required"
+
+                name="mensaje"
                 data-validation-required-message="Please enter your message"
               ></textarea>
               <p class="help-block text-danger"></p>
             </div>
             <div class="control-group">
-              <input type="checkbox" id="comunicacion" />
+              <input type="checkbox" id="comunicacion" name="comunicacion" value="si"//>
               <label for="comunicacion"
                 >Quiero recibir más comunicaciones de Avanza Human Resources
                 S.A.C</label
               >
             </div>
             <div class="control-group mb-5">
-              <input type="checkbox" id="politica" />
+              <input type="checkbox" id="politica" name="politica" value="si"/>
               <label for="politica"
                 >He leído y acepto la política de protección de datos</label
               >
+            </div>
+            <div class="control-group mb-5">
+                <input type="hidden" name="formulario" value="CONTACTOS">
             </div>
 
             <div class="d-flex justify-content-end">
@@ -127,5 +135,4 @@
   </div>
 </div>
 <!-- Contact End -->
-
 <?php include('include/footer.php');?>

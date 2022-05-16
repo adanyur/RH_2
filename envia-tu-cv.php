@@ -35,7 +35,7 @@
           </div>
           <div class="col-md-7">
             <div class="contact-form">
-                <form>
+                <form id="formContacto">
                     <div class="control-group">
                     <input
                         type="text"
@@ -91,21 +91,11 @@
                     />
                     <p class="help-block text-danger"></p>
                     </div>
-
-
                 </form>
-
-
-
             </div>
-
-
           </div>
         </div>
     </div>
 </div>
-
-
-
 
 <?php include('include/footer.php');?>
