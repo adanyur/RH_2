@@ -49,7 +49,6 @@ class EncuestaController {
 
     public static function sendEmail(){
 
-
         $mail = new PHPMailer(true);
 
         try {
