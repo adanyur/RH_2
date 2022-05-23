@@ -29,8 +29,8 @@ documentSelect("#contactForm").addEventListener("submit", (e) => {
     url: "src/public/",
     type: "POST",
     data: JSON.stringify(serializerData(e.target.elements)),
-    success: (result) => {
-      console.log(result);
+    success: ({ message }) => {
+      Swal.fire("Good job!", `${message}`, "success");
     },
   });
 
