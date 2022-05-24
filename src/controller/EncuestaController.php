@@ -54,7 +54,10 @@ class EncuestaController {
         try {
             $mail->isSMTP();                                            //Send using SMTP
             $mail->Host       = 'mail.clinicasantaisabel.com';          //Set the SMTP server to send through
-            $mail->SMTPAuth   = false;                                  //Enable SMTP authentication
+            $mail->SMTPAuth   = true;                                  //Enable SMTP authentication
+            $mail->Port       = 25;                                     
+            $mail->Username   = 'yvaldez@clinicasantaisabel.com';                     //SMTP username
+            $mail->Password   = '47217397yur';                               //SMTP password
             $mail->setFrom('yvaldez@clinicasantaisabel.com', 'Mailer');
             $mail->addAddress('yvaldez@clinicasantaisabel.com', 'Joe User');
             $mail->isHTML(true);
